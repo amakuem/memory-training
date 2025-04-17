@@ -1,6 +1,6 @@
 import { User } from "./user";
 
-class Trainer {
+export class Trainer {
     constructor(){
         
         this.__isUserLogin = false;
@@ -8,7 +8,8 @@ class Trainer {
 
 
     }
-    getUserName(){
+    getUserName() {
+        if (!this.__isUserLogin || !this.__currentUser) return null;
         return this.__currentUser.getName();
     }
     getUserMail(){
@@ -33,7 +34,7 @@ class Trainer {
     }
     registerUser(name, password, mail, id){
         
-        this.__currentUser = new User(name, password, mail, id);
+        this.__currentUser = new User(name, mail, password, id);
         //добавление в бд
         this.__isUserLogin = true;
     }

@@ -3,7 +3,7 @@
 ## Войно Никита 353504
 
 ## Диаграма классов 
-![image](./pictures/diagramaMemoryTraning.png)
+![image](./pictures/updatedDiagram.png)
 
 ## Функциональные требования
 1. **Регистрация и вход в ситсему**
